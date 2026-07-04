@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Fragment } from "react";
 import {
   MOCK_DATES,
   MOCK_BAY_TYPES,
@@ -1095,7 +1095,7 @@ export default function App() {
                             }
 
                             return (
-                              <tbody key={boat.id} className="border-none">
+                              <Fragment key={boat.id}>
                                 <tr className={`hover:bg-slate-50/40 transition-colors ${isExpanded ? "bg-slate-50/30" : ""}`}>
                                   {/* Vessel Specs */}
                                   <td className="p-3 pl-6 font-medium text-slate-950">
@@ -1258,7 +1258,7 @@ export default function App() {
                                     </td>
                                   </tr>
                                 )}
-                              </tbody>
+                              </Fragment>
                             );
                           })
                         )}
@@ -1605,7 +1605,7 @@ export default function App() {
                             }
 
                             return (
-                              <tbody key={contract.id} className="border-none">
+                              <Fragment key={contract.id}>
                                 <tr className={`hover:bg-slate-50/40 transition-colors ${isExpanded ? "bg-slate-50/30" : ""}`}>
                                   {/* Tenant Name */}
                                   <td className="p-3 pl-6 font-medium text-slate-950">
@@ -1737,7 +1737,7 @@ export default function App() {
                                     </td>
                                   </tr>
                                 )}
-                              </tbody>
+                              </Fragment>
                             );
                           })
                         )}
