@@ -1,0 +1,6 @@
+{
+  "name": "DockMaster Revenue Management",
+  "description": "Revenue management and dynamic pricing optimizer for marinas, boatyards, and dealerships.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
